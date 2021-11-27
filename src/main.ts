@@ -3,7 +3,7 @@ import App from './App.vue'
 
 let count: number = 100
 
-count = 'sdg'
+count = 234
 
 console.log(count)
 
