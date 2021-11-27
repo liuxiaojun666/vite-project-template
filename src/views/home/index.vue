@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+const msg = 'Home page'
 </script>
 
 <template>
-  <RouterView />
+  <div>
+    {{ msg }}
+  </div>
 </template>
