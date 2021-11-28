@@ -6,7 +6,9 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "lint": "eslint ./src/**/*.{vue,ts,tsx} --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preinstall": "node ./misc/checkV.js",
+    "predev": "node ./misc/checkV.js"
   },
   "dependencies": {
     "pinia": "^2.0.4",
@@ -36,5 +38,9 @@
       "npm run lint",
       "git add"
     ]
+  },
+  "engines": {
+    "node": "16",
+    "npm": "8"
   }
 }
