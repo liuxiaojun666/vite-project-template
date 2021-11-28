@@ -9,5 +9,10 @@ export default defineConfig({
     vue(),
     eslintPlugin({ cache: false }),
     vueJsx()
-  ]
+  ],
+  resolve: {
+    alias: {
+      '@': './src'
+    }
+  }
 })

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import { addAsyncRoutes } from '../../store'
+import { addAsyncRoutes } from '@/store'
 
 const router = useRouter()
 const msg = 'login page'

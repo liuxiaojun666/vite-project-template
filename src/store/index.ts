@@ -1,5 +1,5 @@
 import { RouteRecordName, RouteRecordRaw } from 'vue-router'
-import router, { asyncRoutes } from '../router'
+import router, { asyncRoutes } from '@/router'
 
 const lazyRoutes: RouteRecordRaw[] = []
 const parentRouteNameKey = Symbol('RouteRecordNameKey')
