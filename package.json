@@ -8,7 +8,8 @@
     "lint": "eslint ./src/**/*.{vue,ts,tsx} --fix",
     "prepare": "husky install",
     "preinstall": "node ./misc/checkV.js",
-    "predev": "node ./misc/checkV.js"
+    "predev": "node ./misc/checkV.js",
+    "prebuild": "node ./misc/checkV.js"
   },
   "dependencies": {
     "pinia": "^2.0.4",
