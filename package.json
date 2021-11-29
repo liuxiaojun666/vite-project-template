@@ -8,10 +8,11 @@
     "lint": "eslint ./src/**/*.{vue,ts,tsx} --fix",
     "prepare": "husky install",
     "preinstall": "node ./misc/checkV.js",
-    "predev": "node ./misc/checkV.js",
+    "predev": "node ./misc/checkV.js && node ./misc/iconDownload.js",
     "prebuild": "node ./misc/checkV.js"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "pinia": "^2.0.4",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12"
@@ -29,10 +30,12 @@
     "eslint-plugin-vue": "^8.1.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
+    "request": "^2.88.2",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
     "vite-plugin-eslint": "^1.3.0",
-    "vue-tsc": "^0.3.0"
+    "vue-tsc": "^0.3.0",
+    "wget": "^0.0.1"
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [

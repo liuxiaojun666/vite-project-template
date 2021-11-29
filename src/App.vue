@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import useUserStore from '@/store/modules/userStore'
+import useCounterStore from '@/store/modules/counter'
 
-const userSotre = useUserStore()
+const counterStore = useCounterStore()
 
 setInterval(() => {
-  userSotre.counter++
+  counterStore.counter++
 }, 1000)
 </script>
 
