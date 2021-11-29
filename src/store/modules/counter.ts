@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { COUNTER_STORE } from '../types'
 
-const useStore = defineStore(COUNTER_STORE, {
+const useCounterStore = defineStore(COUNTER_STORE, {
   state: () => {
     return {
       counter: 0
@@ -9,4 +9,4 @@ const useStore = defineStore(COUNTER_STORE, {
   }
 })
 
-export default useStore
+export default useCounterStore

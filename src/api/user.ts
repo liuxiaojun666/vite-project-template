@@ -1,8 +1,10 @@
+import request from '@/utils/request'
+import { ILoginRequestData, ILoginResponseData } from './user.type'
 
-interface loginData {
-  username: string,
-  password: string
-}
-export function login (data: loginData) {
-
+export function login (data: ILoginRequestData) {
+  return request<ILoginResponseData>({
+    method: 'POST',
+    url: '/login',
+    data
+  })
 }

@@ -17,6 +17,7 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
+    camelcase: 'off'
   },
   globals: {
     defineProps: 'readonly',
